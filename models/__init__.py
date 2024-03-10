@@ -1,5 +1,12 @@
 #!/usr/bin/python3
-"""__init__ magic method for models directory"""
+
+"""
+This special script/module(?) holds the storage variable
+which will glue both BaseModel and FileStorage together
+to allow persistence
+"""
+
+
 from models.engine.file_storage import FileStorage
 
 

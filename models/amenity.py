@@ -1,13 +1,14 @@
-#!/usr/bin/python3
-"""Defines the Amenity class."""
+#!/usr/python3
+""" Module defining the Amenity class for representing amenities in
+the Airbnb application.
+"""
 from models.base_model import BaseModel
 
 
 class Amenity(BaseModel):
-    """Represent an amenity.
+    """Amenity class for representing amenities in the Airbnb application.
 
-    Attributes:
-        name (str): The name of the amenity.
+    Public class attributes:
+        name (str): Empty string by default, representing the amenity's name.
     """
-
     name = ""

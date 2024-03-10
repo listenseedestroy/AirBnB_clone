@@ -1,25 +1,46 @@
 #!/usr/bin/python3
-"""Defines the Place class."""
+""" Module defining the Place class for representing places in
+the Airbnb application.
+"""
 from models.base_model import BaseModel
 
 
 class Place(BaseModel):
-    """Represent a place.
+    """ Place class for representing places in the Airbnb application.
 
-    Attributes:
-        city_id (str): The City id.
-        user_id (str): The User id.
-        name (str): The name of the place.
-        description (str): The description of the place.
-        number_rooms (int): The number of rooms of the place.
-        number_bathrooms (int): The number of bathrooms of the place.
-        max_guest (int): The maximum number of guests of the place.
-        price_by_night (int): The price by night of the place.
-        latitude (float): The latitude of the place.
-        longitude (float): The longitude of the place.
-        amenity_ids (list): A list of Amenity ids.
+    Public class attributes:
+        city_id (str): Empty string by default, representing the ID of
+                    the City associated with the place.
+
+        user_id (str): Empty string by default, representing the ID of
+                    the User associated with the place.
+
+        name (str): Empty string by default, representing the place's name.
+
+        description (str): Empty string by default, representing the
+                        description of the place.
+
+        number_rooms (int): 0 by default, representing the number of
+                        rooms in the place.
+
+        number_bathrooms (int): 0 by default, representing the number of
+                            bathrooms in the place.
+
+        max_guest (int): 0 by default, representing the maximum number of
+                        guests allowed in the place.
+
+        price_by_night (int): 0 by default, representing the price per night
+                            for the place.
+
+        latitude (float): 0.0 by default, representing the latitude coordinate
+                        of the place.
+
+        longitude (float): 0.0 by default, representing the longitude
+                            coordinate of the place.
+
+        amenity_ids (list): Empty list by default, representing the list of
+                            Amenity IDs associated with the place.
     """
-
     city_id = ""
     user_id = ""
     name = ""
